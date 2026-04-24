@@ -9,7 +9,7 @@ const projects = [
     description: 'A comprehensive medical facility system built with C# and OOP principles. Features patient record encryption, appointment scheduling, and role-based access control.',
     tech: ['C#', '.NET', 'SQL Server', 'OOP'],
     icon: Layers,
-    link: '#',
+    link: 'https://github.com/mihithk123/Software-Project-UNI',
     color: 'neon-blue'
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     description: 'A collection of solved machines from TryHackMe and HackTheBox. Focuses on web exploitation, privilege escalation, and network enumeration techniques.',
     tech: ['Linux', 'Burp Suite', 'Nmap', 'JohnTheRipper'],
     icon: ShieldAlert,
-    link: '#',
+    link: 'https://github.com/mihithk123',
     color: 'neon-green'
   },
   {
@@ -27,7 +27,7 @@ const projects = [
     description: 'Advanced Packet Tracer labs simulating multi-area OSPF routing, BGP configurations, and redundant topology implementations for enterprise-grade uptime.',
     tech: ['Cisco iOS', 'Packet Tracer', 'OSPF', 'BGP'],
     icon: Network,
-    link: '#',
+    link: 'https://github.com/mihithk123',
     color: 'neon-blue'
   }
 ];

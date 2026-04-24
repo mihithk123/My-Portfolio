@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Award, CheckCircle2, Circle, GraduationCap, Calendar } from 'lucide-react';
+import { Award, CheckCircle2, Circle, GraduationCap, Calendar, ExternalLink } from 'lucide-react';
 
 const certifications = [
   {
@@ -9,7 +9,8 @@ const certifications = [
     status: 'In Progress',
     description: 'Deepening expertise in switching, routing, wireless connectivity, and IP services.',
     icon: Award,
-    date: 'Expected Q3 2026'
+    date: 'Expected Q3 2026',
+    link: 'https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html'
   },
   {
     title: 'eLearnSecurity Junior Penetration Tester (eJPT)',
@@ -17,7 +18,8 @@ const certifications = [
     status: 'Planned',
     description: 'Target certification for establishing foundational hands-on pentesting skills.',
     icon: Shield,
-    date: 'Target Q1 2027'
+    date: 'Target Q1 2027',
+    link: 'https://www.ine.com/learning/certification/entry-level-penetration-tester'
   },
   {
     title: 'Certified Ethical Hacker (CEH)',
@@ -25,7 +27,8 @@ const certifications = [
     status: 'Planned',
     description: 'Long-term goal for mastering professional ethical hacking methodologies.',
     icon: GraduationCap,
-    date: 'Target Q4 2027'
+    date: 'Target Q4 2027',
+    link: 'https://www.eccouncil.org/certified-ethical-hacker/'
   }
 ];
 
@@ -84,6 +87,16 @@ export const Certifications: React.FC = () => {
                   <div className="flex items-center gap-3 text-[9px] font-mono text-slate-600 uppercase tracking-[0.2em]">
                     <Calendar className="w-3 h-3" /> {cert.date}
                   </div>
+                  {cert.link && (
+                    <a 
+                      href={cert.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 mt-3 text-xs font-mono text-neon-blue hover:text-white transition-colors"
+                    >
+                      VIEW_DETAILS <ExternalLink className="w-3 h-3" />
+                    </a>
+                  )}
                 </div>
               </motion.div>
             ))}

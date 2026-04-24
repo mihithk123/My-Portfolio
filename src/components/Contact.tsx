@@ -128,9 +128,9 @@ export const Footer: React.FC = () => (
         
         <div className="flex gap-8">
           {[
-            { icon: Github, href: '#' },
-            { icon: Linkedin, href: '#' },
-            { icon: Mail, href: '#' }
+            { icon: Github, href: 'https://github.com/mihithk123' },
+            { icon: Linkedin, href: 'https://linkedin.com/in/mihith-kodagoda' },
+            { icon: Mail, href: 'mailto:mihithkodagoda622@gmail.com' }
           ].map((social, i) => (
             <a key={i} href={social.href} className="text-slate-600 hover:text-white transition-colors">
               <social.icon className="w-4 h-4" />
