@@ -26,8 +26,8 @@ export const Navbar: React.FC = () => {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b',
         scrolled 
-          ? 'bg-cyber-black/90 backdrop-blur-md border-white/5 py-4' 
-          : 'bg-transparent border-transparent py-6'
+          ? 'bg-cyber-black/90 backdrop-blur-md border-white/5 py-6' 
+          : 'bg-transparent border-transparent py-8'
       )}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
@@ -37,10 +37,10 @@ export const Navbar: React.FC = () => {
           animate={{ opacity: 1 }}
           className="flex items-center gap-3 group"
         >
-          <div className="w-8 h-8 rounded bg-white/[0.03] border border-white/10 flex items-center justify-center transition-all group-hover:border-neon-blue/30">
-            <Shield className="w-4 h-4 text-neon-blue" />
+          <div className="w-10 h-10 rounded bg-white/[0.03] border border-white/10 flex items-center justify-center transition-all group-hover:border-neon-blue/30">
+            <Shield className="w-5 h-5 text-neon-blue" />
           </div>
-          <span className="font-mono font-bold text-sm tracking-tight text-white">
+          <span className="font-mono font-bold text-base tracking-tight text-white">
             MIHITH <span className="text-slate-500">KODAGODA</span>
           </span>
         </motion.a>
@@ -54,7 +54,7 @@ export const Navbar: React.FC = () => {
               initial={{ opacity: 0, y: -5 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.05 }}
-              className="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-400 hover:text-white transition-colors relative group"
+              className="font-mono text-xs uppercase tracking-[0.2em] text-slate-400 hover:text-white transition-colors relative group"
             >
               {link.name}
             </motion.a>
