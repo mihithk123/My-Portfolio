@@ -75,7 +75,7 @@ export const Hero: React.FC = () => {
             <div className="relative z-10 w-64 h-64 mx-auto border border-white/10 bg-white/[0.01] p-1.5 rounded-lg">
               <div className="relative w-full h-full overflow-hidden rounded grayscale group-hover:grayscale-0 transition-all duration-700">
                 <img 
-                  src="https://picsum.photos/seed/tech/600/600" 
+                  src="/main.png" 
                   alt="Mihith Kodagoda" 
                   className="w-full h-full object-cover opacity-90 group-hover:opacity-100"
                   referrerPolicy="no-referrer"
