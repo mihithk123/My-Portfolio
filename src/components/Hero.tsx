@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { TypeAnimation } from 'react-type-animation';
-import { Terminal, Shield, ChevronRight } from 'lucide-react';
+import { Terminal } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
@@ -13,9 +13,9 @@ export const Hero: React.FC = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-white/[0.03] border border-white/5 text-slate-400 text-[10px] font-mono mb-6 uppercase tracking-widest">
-            STATUS: ACTIVE_STUDENT_MODE
+            STATUS: CV_READY / OPEN_TO_OPPORTUNITIES
           </div>
-          
+
           <h1 className="text-5xl md:text-6xl font-mono font-bold leading-tight mb-4 tracking-tighter text-white">
             Mihith <br />
             <span className="text-neon-blue neon-glow-blue italic">Kodagoda</span>
@@ -24,13 +24,13 @@ export const Hero: React.FC = () => {
           <div className="text-xl text-slate-400 font-mono mb-8 h-8">
             <TypeAnimation
               sequence={[
-                'Aspiring Security Analyst',
+                'Cybersecurity Student',
                 2000,
-                'Hands-on Lab Enthusiast',
+                'Network Security Learner',
                 2000,
-                'Nmap & Wireshark Explorer',
+                'CTF & Lab Enthusiast',
                 2000,
-                'CCNA Pipeline In-Progress',
+                'Software + Security Builder',
                 2000,
               ]}
               wrapper="span"
@@ -40,8 +40,7 @@ export const Hero: React.FC = () => {
           </div>
 
           <p className="text-base text-slate-500 max-w-lg mb-10 leading-relaxed font-sans">
-            Dedicated Cybersecurity student exploring the intricacies of network defense. 
-            Actively building practical experience through labs, CTFs, and technical certifications.
+            Dedicated cybersecurity student exploring network defense, ethical security practices, and real-world technical problem solving through labs, projects, and certifications.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -70,19 +69,16 @@ export const Hero: React.FC = () => {
           transition={{ duration: 1, delay: 0.2 }}
           className="relative hidden lg:block"
         >
-          {/* Profile Image with Professional Technical Styling */}
           <div className="relative group mb-8">
             <div className="relative z-10 w-64 h-64 mx-auto border border-white/10 bg-white/[0.01] p-1.5 rounded-lg">
               <div className="relative w-full h-full overflow-hidden rounded grayscale group-hover:grayscale-0 transition-all duration-700">
-                <img 
-                  src="/main.png" 
-                  alt="Mihith Kodagoda" 
+                <img
+                  src="/main.png"
+                  alt="Mihith Kodagoda"
                   className="w-full h-full object-cover opacity-90 group-hover:opacity-100"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-blue-500/5 mix-blend-overlay" />
-                
-                {/* Clean technical overlays */}
                 <div className="absolute top-2 left-2 font-mono text-[9px] text-white/40">
                   REF_0881 <br />
                   SEC_LVL_02
@@ -100,18 +96,18 @@ export const Hero: React.FC = () => {
               </div>
               <Terminal className="w-3.5 h-3.5 text-slate-500" />
             </div>
-            
+
             <div className="p-6 font-mono text-[11px] space-y-3">
               <div className="flex gap-3">
                 <span className="text-neon-blue">main@sentinel:</span>
                 <span className="text-white">~/auth/mihith</span>
               </div>
               <div className="text-slate-400 leading-relaxed">
-                 {">"} Specialist in Network Security Audit <br />
-                 {">"} Expertise in TCP/IP & Infrastructure <br />
-                 {">"} Active CCNA Development Pipeline
+                 {">"} Network Security & Infrastructure Learner <br />
+                 {">"} Practical experience in security labs and project work <br />
+                 {">"} Preparing for CCNA and ethical hacking pathways
               </div>
-              
+
               <div className="h-px bg-white/5 my-2" />
 
               <div className="flex items-center justify-between text-[10px]">

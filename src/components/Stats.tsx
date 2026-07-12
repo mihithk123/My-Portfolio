@@ -4,25 +4,23 @@ import { Github, Target, Activity, Zap, Award, Star } from 'lucide-react';
 
 const stats = [
   {
-    platform: 'TryHackMe',
+    platform: 'Security Practice',
     icon: Target,
     color: 'text-slate-400',
-    borderColor: 'border-white/5',
-    rank: 'Top 3% Analyst',
+    rank: 'Hands-on Learning',
     metrics: [
-      { label: 'Platform Ranking', value: 'Global Leader', icon: Award },
-      { label: 'Specializations', value: '18 Modules', icon: Zap },
+      { label: 'Focus', value: 'Networking', icon: Award },
+      { label: 'Method', value: 'Labs & CTFs', icon: Zap },
     ]
   },
   {
-    platform: 'GitHub',
+    platform: 'Developer Profile',
     icon: Github,
     color: 'text-slate-400',
-    borderColor: 'border-white/5',
-    rank: 'Active Contributor',
+    rank: 'Project Portfolio',
     metrics: [
-      { label: 'Commits', value: '840+', icon: Activity },
-      { label: 'Repositories', value: '24', icon: Star },
+      { label: 'Code', value: 'Systems + Security', icon: Activity },
+      { label: 'Growth', value: 'Continuous Learning', icon: Star },
     ]
   }
 ];
@@ -32,7 +30,7 @@ export const Stats: React.FC = () => {
     <section className="py-32 px-6 relative border-b border-white/5">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-3 gap-16 items-start">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -42,7 +40,7 @@ export const Stats: React.FC = () => {
               Learning <br /><span className="text-neon-blue">Progress</span>
             </h2>
             <p className="text-slate-500 font-sans text-base leading-relaxed">
-              Actively developing skills through focused training modules, labs, and collaborative platforms like TryHackMe and GitHub.
+              Built through focused training, practical labs, and a growing portfolio across networking, security, and software development.
             </p>
           </motion.div>
 
@@ -54,7 +52,7 @@ export const Stats: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className={`p-10 border border-white/5 bg-white/[0.01] rounded-lg transition-colors hover:bg-white/[0.02]`}
+                className="p-10 border border-white/5 bg-white/[0.01] rounded-lg transition-colors hover:bg-white/[0.02]"
               >
                 <div className="flex items-center gap-4 mb-10">
                   <div className={`p-4 rounded-lg bg-white/[0.03] border border-white/5 ${item.color}`}>

@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Github, ExternalLink, ShieldAlert, Network, Layers } from 'lucide-react';
+import { Github, ShieldAlert, Network, Layers } from 'lucide-react';
 
 const projects = [
   {
     title: 'Clinic Management Suite',
     category: 'Software Architecture',
-    description: 'A comprehensive medical facility system built with C# and OOP principles. Features patient record encryption, appointment scheduling, and role-based access control.',
+    description: 'A university-level application built with C# and OOP principles, featuring secure patient record handling, appointment scheduling, and role-based access design.',
     tech: ['C#', '.NET', 'SQL Server', 'OOP'],
     icon: Layers,
     link: 'https://github.com/mihithk123/Software-Project-UNI',
@@ -15,7 +15,7 @@ const projects = [
   {
     title: 'CTF Challenge Vault',
     category: 'Cybersecurity',
-    description: 'A collection of solved machines from TryHackMe and HackTheBox. Focuses on web exploitation, privilege escalation, and network enumeration techniques.',
+    description: 'A curated collection of security lab write-ups and challenge solutions focused on web exploitation, privilege escalation, enumeration, and practical pentesting techniques.',
     tech: ['Linux', 'Burp Suite', 'Nmap', 'JohnTheRipper'],
     icon: ShieldAlert,
     link: 'https://github.com/mihithk123',
@@ -24,7 +24,7 @@ const projects = [
   {
     title: 'Global Network Lab',
     category: 'Networking',
-    description: 'Advanced Packet Tracer labs simulating multi-area OSPF routing, BGP configurations, and redundant topology implementations for enterprise-grade uptime.',
+    description: 'Packet Tracer-based network simulations covering routing, switching, and resilient enterprise topology design with a focus on reliability and connectivity.',
     tech: ['Cisco iOS', 'Packet Tracer', 'OSPF', 'BGP'],
     icon: Network,
     link: 'https://github.com/mihithk123',
@@ -41,7 +41,7 @@ export const Projects: React.FC = () => {
             Case <span className="text-neon-blue">Studies</span>
           </h2>
           <p className="text-slate-500 font-sans text-sm max-w-sm">
-            Selected technical projects focused on security audit, systems architecture, and network simulation.
+            A selection of technical projects showing practical application in systems design, networking, and cybersecurity learning.
           </p>
         </div>
 
@@ -78,7 +78,7 @@ export const Projects: React.FC = () => {
                 </p>
 
                 <div className="flex flex-wrap gap-2 pt-6 border-t border-white/5">
-                  {project.tech.map(t => (
+                  {project.tech.map((t) => (
                     <span key={t} className="text-[10px] font-mono text-slate-600 uppercase tracking-widest">
                       {t}
                     </span>

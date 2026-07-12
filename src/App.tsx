@@ -68,34 +68,38 @@ export default function App() {
                 <div className="space-y-12">
                    <div>
                      <h2 className="text-4xl font-mono font-bold uppercase tracking-tight mb-6 text-white">
-                       Learning <span className="text-neon-blue">Trajectory</span>
+                       Professional <span className="text-neon-blue">Profile</span>
                      </h2>
                      <p className="text-slate-400 text-lg leading-relaxed font-sans max-w-lg">
-                       As a dedicated Cybersecurity student, my focus is on mastering the fundamental principles of network architecture and defensive operations through hands-on practice.
+                       I am Mihith Kodagoda, a cybersecurity-focused student with strong interest in networking, secure systems, and hands-on technical practice. My portfolio reflects both academic growth and self-driven exploration in defensive security and infrastructure.
                      </p>
                    </div>
-                   
-                   <div className="space-y-8">
-                      {[
-                        { title: 'Academic Foundation', desc: 'Deep-diving into network protocols, encryption, and system administration.' },
-                        { title: 'Skills Application', desc: 'Participating in CTFs and labs to apply theoretical knowledge in real-world scenarios.' },
-                        { title: 'Technical Curiosity', desc: 'Exploring emerging technologies and threat landscapes through independent study.' }
-                      ].map(item => (
-                        <div key={item.title} className="flex gap-6 group">
-                           <div className="w-px h-12 bg-white/10 group-hover:bg-neon-blue transition-colors" />
-                           <div>
-                             <div className="font-mono text-xs font-bold uppercase tracking-widest text-slate-200 mb-1">{item.title}</div>
-                             <div className="text-slate-500 text-sm leading-relaxed">{item.desc}</div>
-                           </div>
-                        </div>
-                      ))}
+
+                   <div className="grid md:grid-cols-2 gap-6">
+                      <div className="p-6 border border-white/5 bg-white/[0.01] rounded-lg">
+                        <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-slate-500 mb-4">Current Focus</div>
+                        <ul className="space-y-3 text-sm text-slate-400 font-sans">
+                          <li>• Network defense, packet analysis, and routing fundamentals</li>
+                          <li>• Ethical hacking concepts, CTF-style learning, and security labs</li>
+                          <li>• Building secure systems and software with a strong engineering mindset</li>
+                        </ul>
+                      </div>
+
+                      <div className="p-6 border border-white/5 bg-white/[0.01] rounded-lg">
+                        <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-slate-500 mb-4">Career Direction</div>
+                        <ul className="space-y-3 text-sm text-slate-400 font-sans">
+                          <li>• Aspiring Security Analyst and SOC-oriented learner</li>
+                          <li>• Interested in internships, collaborative labs, and entry-level opportunities</li>
+                          <li>• Continuously improving through certifications and practical projects</li>
+                        </ul>
+                      </div>
                    </div>
                 </div>
 
                 <div className="p-12 border border-white/5 bg-white/[0.01] rounded shadow-2xl relative overflow-hidden">
-                  <div className="font-mono text-slate-600 text-[10px] mb-10 tracking-[0.3em] uppercase">Student_Profile</div>
+                  <div className="font-mono text-slate-600 text-[10px] mb-10 tracking-[0.3em] uppercase">CV_Overview</div>
                   <p className="font-sans text-xl leading-relaxed text-slate-300 italic mb-10">
-                    "My goal is to transition from an enthusiastic student to a proficient professional by maintaining a relentless commitment to hands-on learning and ethical practices."
+                    “I aim to grow from an enthusiastic learner into a capable professional by combining rigorous study, practical labs, and ethical technical practice.”
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="w-8 h-px bg-white/10" />
