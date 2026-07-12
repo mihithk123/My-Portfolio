@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Github, ShieldAlert, Network, Layers } from 'lucide-react';
+import { Github, ShieldAlert, Network, Layers, Database, Code2 } from 'lucide-react';
 
 const projects = [
   {
@@ -27,6 +27,24 @@ const projects = [
     description: 'Packet Tracer-based network simulations covering routing, switching, and resilient enterprise topology design with a focus on reliability and connectivity.',
     tech: ['Cisco iOS', 'Packet Tracer', 'OSPF', 'BGP'],
     icon: Network,
+    link: 'https://github.com/mihithk123',
+    color: 'neon-blue'
+  },
+  {
+    title: 'Database-Driven Systems Practice',
+    category: 'Data & Applications',
+    description: 'Hands-on work with structured data models, persistence layers, and application logic for real-world software scenarios.',
+    tech: ['SQL', 'Database Design', 'CRUD', 'Architecture'],
+    icon: Database,
+    link: 'https://github.com/mihithk123',
+    color: 'neon-green'
+  },
+  {
+    title: 'Security Learning Repository',
+    category: 'Research & Learning',
+    description: 'A personal repository of notes, techniques, and walkthroughs covering security concepts, tools, and defensive practices.',
+    tech: ['Research', 'Security Notes', 'Methodology', 'Learning'],
+    icon: Code2,
     link: 'https://github.com/mihithk123',
     color: 'neon-blue'
   }
